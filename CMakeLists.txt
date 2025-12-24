@@ -3,4 +3,8 @@ project(Vault C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(Vault src/main.c)
+add_executable(
+        Vault
+        src/main.c
+        src/entry.c
+)
