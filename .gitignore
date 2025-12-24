@@ -1,0 +1,28 @@
+# build artifacts
+/build/
+/bin/
+*.o
+*.a
+*.so
+*.exe
+*.out
+
+# debug / profiling
+*.dSYM/
+*.gcda
+*.gcno
+*.prof
+
+# editor / OS noise
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# local data (never commit vaults)
+*.vault
+*.bin
+data/
+
+# logs
+*.log
