@@ -12,7 +12,7 @@ void lockVaultSession(VaultSession *session) {
     if (session == NULL) {
         return;
     }
-    memset(session->key, 0, KEY_SIZE); // Wipe the key
+    memset(session->kek, 0, KEK_SIZE); // Wipe the key
     memset(session->salt, 0, SALT_SIZE); // Wipe the salt
     session->isUnlocked = false;
 }

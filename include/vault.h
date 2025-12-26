@@ -3,8 +3,8 @@
 
 #include <stdbool.h>
 
-#define SALT_SIZE 32
-#define KEY_SIZE 32
+#define SALT_SIZE 16
+#define KEK_SIZE 32 // Key Encryption Key
 
 /*
  * Self notes ->
@@ -14,7 +14,7 @@
  */
 typedef struct {
     bool isUnlocked;
-    unsigned char key[KEY_SIZE];
+    unsigned char kek[KEK_SIZE];
     unsigned char salt[SALT_SIZE];
 } VaultSession;
 

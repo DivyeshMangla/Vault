@@ -20,6 +20,6 @@ int main(void) {
     puts("Welcome to the Password Manager!");
 
     obtainMasterPassword(masterPassword, sizeof(masterPassword));
-
+    memset(masterPassword, 0, sizeof(masterPassword));
     return 0;
 }
